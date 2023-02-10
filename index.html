@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE HELP - ANIMATION</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(216, 210, 200);
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+
+        .big-circle {
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            height: 600px;
+            width: 600px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 3px rgb(137, 127, 127);
+            animation: big 20s linear infinite;
+        }
+
+        @keyframes big {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .bg {
+            animation: imgs 20s linear infinite;
+        }
+
+        @keyframes imgs {
+
+            0% {
+                rotate: 360deg;
+            }
+
+        }
+
+        .mid-circle {
+            position: absolute;
+            top: 17%;
+            left: 17%;
+            height: 400px;
+            width: 400px;
+            background-color: rgb(221, 194, 245);
+            border-radius: 50%;
+            /* box-shadow: 0px 0px 5px black; */
+        }
+
+        .small-circle {
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            animation: small 10s linear infinite;
+            /* box-shadow: 0px 0px 5px black; */
+        }
+
+        @keyframes small {
+            0% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .sm {
+            animation: smimg 20s linear infinite;
+        }
+
+        @keyframes smimg {
+
+            100% {
+                rotate: 360deg;
+            }
+
+        }
+
+        .amazon {
+            position: absolute;
+            width: 200px;
+            top: -100px;
+            left: 32%;
+
+        }
+
+        .apple {
+            position: absolute;
+            width: 200px;
+            top: 12%;
+            left: -72px;
+
+        }
+
+        .google {
+            position: absolute;
+            width: 200px;
+            top: 12%;
+            right: -72px;
+
+        }
+
+        .netflix {
+            position: absolute;
+            width: 200px;
+            bottom: 12%;
+            right: -72px;
+
+
+        }
+
+        .meta {
+            position: absolute;
+            width: 200px;
+            bottom: 12%;
+            left: -72px;
+
+        }
+
+        .microsoft {
+            position: absolute;
+            width: 200px;
+            bottom: -100px;
+            left: 32%;
+        }
+
+        .flipkart {
+            position: absolute;
+            width: 200px;
+            top: -100px;
+            left: 0;
+        }
+
+        .linkedin {
+            position: absolute;
+            width: 200px;
+            bottom: -100px;
+            left: 5px;
+        }
+
+        .ola {
+            position: absolute;
+            width: 200px;
+            right: -100px;
+
+        }
+
+        .a-icon {
+            position: absolute;
+            width: 200px;
+            left: -100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="big-circle">
+            <img class="amazon bg" src="./images/amazon.webp" alt="img">
+            <img class="apple bg" src="./images/apple.webp" alt="img">
+            <img class="google bg" src="./images/google.webp" alt="img">
+            <img class="netflix bg" src="./images/netflix.webp" alt="img">
+            <img class="microsoft bg" src="./images/microsoft.webp" alt="img">
+            <img class="meta bg" src="./images/meta.webp" alt="img">
+            <div class="mid-circle">
+                <div class="small-circle">
+                    <img class="flipkart sm" src="./images/flipkart.webp" alt="img">
+                    <img class="linkedin sm" src="./images/linkedin.webp" alt="img">
+                    <img class="ola sm" src="./images/ola.webp" alt="img">
+                    <img class="a-icon sm" src="./images/a-icon.webp" alt="img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
